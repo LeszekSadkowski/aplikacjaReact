@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project React</title>
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header></header>
+<main>
+    <div class="formParent">
+        <form action="submit" class="form">
+            <div id='userData'>
+                <div>
+                    <label for="name"> Imie </label> <br>
+                    <input type="text" id="name" name="name" placeholder="Twoje imie">
+                </div>
+                <div>
+                    <label for="surname"> Nazwisko </label> <br>
+                    <input type="text" id="surname" name="surname" placeholder="Twoje nazwisko">
+                </div>
+                <div>
+                    <label for="city"> Miejscowość </label> <br>
+                    <input type="text" id="city" name="city" placeholder="Podaj miejscowość">
+                </div>
+                <div>
+                    <label for="street"> Adres </label> <br>
+                    <input type="text" id="street" name="street" placeholder="Podaj adres">
+                </div>
+                <div>
+                    <label for="email"> Email </label> <br>
+                    <input type="email" id="email" name="email" placeholder="Podaj email">
+                </div>
+                <div>
+                    <label for="phone"> Tel. </label> <br>
+                    <input type="tel" id="phone" name="phone" placeholder="Tel. kontaktowy">
+                </div>
+                <div>
+                    <label> Zainteresownia</label> <br>
+                    <input type="text" name="" placeholder="dodaj zainteresowania">
+                    <button id="addHobby" class="button">Dodaj</button>
+                    <button id="removeHobby" class="button">Usuń</button>
+                </div>
+            </div>
+
+            <div id="usrDataAdding">
+                <div>
+                    <label> Umiejętności </label> <br>
+                    <input type="text" name="abilities" placeholder="Wpisz umiejętność">
+                    <button id="absAdd" class="button">Dodaj</button>
+                    <button id="absDel" class="button">Usuń</button>
+                </div>
+                <div>
+                    <span id="expTitle"> Doświadczenie<br>
+                        <span>Początek
+                            <span> miesiąc
+                                <select id="expMonthSt" name="expMonthSt">
+                                    <option selected>Styczeń</option>
+                                    <option>Luty</option>
+                                    <option>Marzec</option>
+                                    <option>Kwiecień</option>
+                                    <option>Maj</option>
+                                    <option>Czerwiec</option>
+                                    <option>Lipiec</option>
+                                    <option>Sierpień</option>
+                                    <option>Wrzesień</option>
+                                    <option>Październik</option>
+                                    <option>Listopad</option>
+                                    <option>Grudzień</option>
+                                </select>
+                            </span>
+                        </span>
+                        <span>Rok
+                             <input type="number" id="expStYear" name="year" placeholder="podaj rok">
+                        </span><br>
+                        <span> Koniec
+                            <span>miesiąc
+                                <select id="expEndMonth" name="expEndMonth">
+                                    <option selected>Styczeń</option>
+                                    <option>Luty</option>
+                                    <option>Marzec</option>
+                                    <option>Kwiecień</option>
+                                    <option>Maj</option>
+                                    <option>Czerwiec</option>
+                                    <option>Lipiec</option>
+                                    <option>Sierpień</option>
+                                    <option>Wrzesień</option>
+                                    <option>Październik</option>
+                                    <option>Listopad</option>
+                                    <option>Grudzień</option>
+                                </select>
+                            </span>
+                        </span>
+                        <span> Rok
+                            <input type="number" id="yearExpEnd" name="yearExpEnd" placeholder="podaj rok">
+                        </span><br>
+
+                        <input type="text" name="expirience" placeholder="podaj miejsce pracy/doświadczenia">
+                        <button id="expAdd" class="button">Dodaj</button>
+                        <button id="expDel" class="button">Usuń</button>
+                    </span>
+                </div>
+                <span id="schoolTitle"> Wykształcenie<br>
+                        <span>Początek
+                            <span> miesiąc
+                                <select id="schoolStart" name="schoolStart">
+                                    <option selected>Styczeń</option>
+                                    <option>Luty</option>
+                                    <option>Marzec</option>
+                                    <option>Kwiecień</option>
+                                    <option>Maj</option>
+                                    <option>Czerwiec</option>
+                                    <option>Lipiec</option>
+                                    <option>Sierpień</option>
+                                    <option>Wrzesień</option>
+                                    <option>Październik</option>
+                                    <option>Listopad</option>
+                                    <option>Grudzień</option>
+                                </select>
+                            </span>
+                        </span>
+                        <span>Rok
+                             <input type="number" id="yearSch" name="year" placeholder="podaj rok">
+                        </span><br>
+                        <span> Koniec
+                            <span>miesiąc
+                                <select id="schoolEnd" name="schollEnd">
+                                    <option selected>Styczeń</option>
+                                    <option>Luty</option>
+                                    <option>Marzec</option>
+                                    <option>Kwiecień</option>
+                                    <option>Maj</option>
+                                    <option>Czerwiec</option>
+                                    <option>Lipiec</option>
+                                    <option>Sierpień</option>
+                                    <option>Wrzesień</option>
+                                    <option>Październik</option>
+                                    <option>Listopad</option>
+                                    <option>Grudzień</option>
+                                </select>
+                            </span>
+                        </span>
+                        <span> Rok
+                            <input type="number" id="yearSchoolEnd" name="yearSchoolEnd" placeholder="podaj rok">
+                        </span><br>
+
+                        <input type="text" name="expirience" placeholder="podaj miejsce pracy/doświadczenia">
+                        <button id="schoolAdd" class="button">Dodaj</button>
+                        <button id="schoolDel" class="button">Usuń</button>
+                    </span><br>
+            </div>
+            <button type="submit" id="send" class="button">Zapisz</button>
+        </form>
+    </div>
+    <div>
+        <div id="cv">
+            <h1>CV</h1>
+            <div id="clauzule" >
+                <div >
+                    <div id="basicInfo">
+                        <div>
+                            <h2>Nazwisko</h2>
+                            <h2>imie</h2>
+                        </div>
+                    </div>
+                    <div id="exp">
+                        <h2>doświadczenie</h2>
+                    </div>
+                    <div id="schools">
+                        <h2>wykształcenie</h2>
+                    </div>
+
+                </div>
+                <p >Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu
+                rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U.
+                2016 r. poz. 922). </p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer></footer>
+
+</body>
+</html>

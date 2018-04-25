@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'eraserregular';
+    src: url('../fonts/Eraser/eraserregular.woff2') format('woff2'),
+         url('../fonts/Eraser/eraserregular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'reeyregular';
+    src: url('../fonts/reey/reey-regular.woff2') format('woff2'),
+         url('../fonts/reey/reey-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#inviteCard{
+
+    height: 100vh;
+    width: 100vw;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#invNames{
+    font-family: 'reeyregular';
+    font-size: 90px;
+    color: red;
+    margin-bottom:30px;
+    transform: rotate(-5deg);
+}
+#invInformation{
+    width: 600px;
+    padding-right:10px;
+    z-index: 2;
+}

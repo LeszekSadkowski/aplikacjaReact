@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'eraserregular';
+  src:url('../fonts/Eraser/eraserregular.woff2') format('woff2'),
+      url('../fonts/Eraser/eraserregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+label{
+  display: none;
+}
+
+
+div{
+  margin-top: 25px;
+}
+#calendar{
+  font-size: 25px;
+  margin-bottom: -25px;
+
+}
+
+span{
+  color: white;
+  text-align: center;
+}
+
+input{
+  width: 500px;
+  border: none;
+  border-radius: 30%;
+  font-size:30px;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  line-height: 2em;
+  cursor: pointer;
+  font-family: 'eraserregular';
+  &:hover{
+    transform: scale(1.1)
+  }
+  &:focus{
+    background-color: transparent;
+  }
+  &::placeholder{
+    color: white;
+    font-family: 'eraserregular';
+    font-size: 40px;
+  }
+  &:active{
+    font-family: 'eraserregular';
+  }
+}
+#date{
+  margin-left:10px;
+}
+#formBtn{
+  border: none;
+  background-color: transparent;
+  font-family: 'eraserregular';
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  &:hover{
+    transform: scale(1.1)
+  }
+}

@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'eraserregular';
+  src: url('../fonts/Eraser/eraserregular.woff2') format('woff2'),
+       url('../fonts/Eraser/eraserregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@import 'form.scss';
+@import 'invite.scss';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.full-page {
+  background-image: url("../images/backgroudFirstSite.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'eraserregular';
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .page-button {
+    font-size: 4.5em;
+    border: none;
+    color: white;
+    font-family: 'eraserregular';
+    background-color: transparent;
+    opacity: .8;
+    margin-top: 45px
+  }
+  .page-button:hover {
+  
+    transform: scale(1.2);
+    font-weight: bolder;
+    cursor: pointer;
+  
+  
+  }
+}
+
+
+
+
