@@ -15,7 +15,7 @@ class Invite extends React.Component{
     render(){
         return (
         <div id='inviteCard'>
-            <div id='invNames' > Mark &#38; Jeny</div>
+            <div id='invNames' > {this.state.name} </div>
             <div id='invInformation'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nobis voluptatem dolorem, mollitia hic dolores optio labore. Consequatur perspiciatis molestiae ratione numquam blanditiis quia! Quis blanditiis illum sequi aliquam recusandae.</div>
         </div>
         )
@@ -98,7 +98,18 @@ class Form extends React.Component{
         )
     }
 }
-
+class View extends React.Component{
+    handleClickView=(e, myEvent)=>{
+        console.log('work');
+        this.props.action(e,myEvent)
+    }
+    render(){
+        return(<div className="full-page">
+        <div><button className="page-button" onClick={e=>this.handleClickView(e,'wedding')}>wedding</button></div>
+        <div><button className="page-button" onClick={e=>this.handleClickView(e,'birth')}>birthday</button></div>
+    </div>)
+    }
+}
 
 class App extends React.Component{
     constructor(props){
@@ -118,10 +129,7 @@ class App extends React.Component{
     }
 
     render(){
-        let view=(<div className="full-page">
-                <div><button className="page-button" onClick={e=>this.handleClick(e,'wedding')}>wedding</button></div>
-                <div><button className="page-button" onClick={e=>this.handleClick(e,'birth')}>birthday</button></div>
-            </div>)
+        let view=<View action={this.handleClick} />
             if(this.state.event){
                 view=<Form option={this.state.option}/>
             }
