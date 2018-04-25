@@ -29,33 +29,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-
-a {
-
-
-  text-decoration: none;
-  padding-right: 10px;
-  cursor: pointer;
-  &:focus{
-    outline: none;
+  .page-button {
+    font-size: 4.5em;
+    border: none;
+    color: white;
+    font-family: 'eraserregular';
+    background-color: transparent;
+    opacity: .8;
+    margin-top: 45px
   }
-
+  .page-button:hover {
+  
+    transform: scale(1.2);
+    font-weight: bolder;
+    cursor: pointer;
+  
+  
+  }
 }
-.page-button {
-  font-size: 4.5em;
-  border: none;
-  color: white;
-  font-family: 'eraserregular';
-  background-color: transparent;
-  opacity: .8;
-}
-.page-button:hover {
-
-  transform: scale(1.2);
-  font-weight: bolder;
-  cursor: pointer;
 
 
-}
+
+

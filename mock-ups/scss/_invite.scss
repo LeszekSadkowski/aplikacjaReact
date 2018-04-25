@@ -40,3 +40,36 @@
     padding-right:10px;
     z-index: 2;
 }
+.btnAnim{
+    color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s color;
+}
+.inviteBtn{
+    bottom:-150px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    &:hover{
+
+       color: rgba(0,0,0,0.9);
+    }
+    &:after { content:'';
+    position: absolute;
+    left:50%;
+    right:50%;
+    bottom:0;
+    height:2px;
+    background: #000;
+    transition: 0.5s all;
+    }
+    &:hover:after {
+        left:5px;
+        right:5px;
+    }
+}
+@media print {
+    .example-screen {
+        display: none;
+    }
+ }
