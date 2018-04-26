@@ -1,4 +1,5 @@
 import React from 'react';
+import {Wedding} from './wedding1.jsx';
 
 class Invite extends React.Component{
     constructor(props){
@@ -23,16 +24,7 @@ class Invite extends React.Component{
 
         console.log(this.props)
         return (<div id='displInvSite'>
-            <div id='weddingCard1'>
-                <div id='invNames' > {this.state.name} </div>
-                <div id='invPart1'>together with their parensts<br/> invite you </div>
-                <div id='invPart2'>to join them at<br/>{`the celebration of their ${this.state.option}`}</div>
-                <div id='invited'>{this.state.who}</div>
-                <div id='place'>{this.state.where} </div>
-                <div id='when'>{`${this.state.date} ${this.state.month} ${this.state.year}`}</div>
-                <div id='hour'>{this.state.hour}</div>
-                <div id='monthDay'>miesiąc/data</div>
-            </div>
+            <Wedding info={this.state} />
             <div className="btnAnim">
                     <div className="example-screen inviteBtn" onClick={this.print}  >print</div>
             </div>
