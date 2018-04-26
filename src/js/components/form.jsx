@@ -12,7 +12,9 @@ class Form extends React.Component{
             hour:'',
             option:this.props.option,
             invite:false,
-            month:null
+            month:null,
+            date:'',
+            year:''
         }
     }
     handleChange = (e, keyState) => {
@@ -44,7 +46,9 @@ class Form extends React.Component{
         if (empty==false && wrgDate==false){
            this.setState({
             month:monthName,
-            invite:true
+            invite:true,
+            date:whenEl[2],
+            year:whenEl[0]
 
             })
         }else{

@@ -7,9 +7,12 @@ class Invite extends React.Component{
             name:this.props.info.name,
             who:this.props.info.who,
             where:this.props.info.where,
+            hour:this.props.info.hour,
             when:this.props.info.when,
             option:this.props.info.option,
-            month:this.props.info.month
+            month:this.props.info.month,
+            date:this.props.info.date,
+            year:this.props.info.year
         }
     }
     print=()=>{
@@ -17,13 +20,21 @@ class Invite extends React.Component{
 
     }
     render(){
+
         console.log(this.props)
-        return (
-        <div id='inviteCard'>
-            <div id='invNames' > {this.state.name} </div>
-            <div id='invInformation'>{`Lorem ${this.state.who}ipsum dolor sit amet, consectetur ${this.state.where}adipisicing elit. Ea nobis voluptatem dolorem, mollitia hic dolores optio labore. Consequatur perspiciatis molestiae ratione numquam blanditiis quia! Quis blanditiis illum sequi aliquam recusandae.`}</div>
+        return (<div id='displInvSite'>
+            <div id='weddingCard1'>
+                <div id='invNames' > {this.state.name} </div>
+                <div id='invPart1'>together with their parensts<br/> invite you </div>
+                <div id='invPart2'>to join them at<br/>{`the celebration of their ${this.state.option}`}</div>
+                <div id='invited'>{this.state.who}</div>
+                <div id='place'>{this.state.where} </div>
+                <div id='when'>{`${this.state.date} ${this.state.month} ${this.state.year}`}</div>
+                <div id='hour'>{this.state.hour}</div>
+                <div id='monthDay'>miesiąc/data</div>
+            </div>
             <div className="btnAnim">
-                 <div className="example-screen inviteBtn" onClick={this.print}  >print</div>
+                    <div className="example-screen inviteBtn" onClick={this.print}  >print</div>
             </div>
         </div>
         )
