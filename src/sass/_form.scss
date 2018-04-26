@@ -10,14 +10,22 @@
 label{
   display: none;
 }
+.table{
+text-align: center;
+position: relative;
 
-
-div{
-  margin-top: 25px;
 }
+#user{
+  margin-top: -20px;
+  width: 700px;
+}
+#invite{
+  width: 700px;
+}
+
 #calendar{
   font-size: 25px;
-  margin-bottom: -25px;
+  margin-bottom: 0;
 
 }
 
@@ -25,11 +33,16 @@ span{
   color: white;
   text-align: center;
 }
-
+#date{
+  margin-left:60px;
+  width: 320px;
+}
+#time{
+  margin-left:23px;
+}
 input{
-  width: 500px;
+
   border: none;
-  border-radius: 30%;
   font-size:30px;
   background-color: transparent;
   color: white;
@@ -37,8 +50,12 @@ input{
   line-height: 2em;
   cursor: pointer;
   font-family: 'eraserregular';
+  // &:-webkit-autofill{
+  //   color: white !important;
+  //   background-color: transparent !important;
+  // }
   &:hover{
-    transform: scale(1.1)
+    transform: scale(1.15)
   }
   &:focus{
     background-color: transparent;
@@ -52,9 +69,9 @@ input{
     font-family: 'eraserregular';
   }
 }
-#date{
-  margin-left:10px;
-}
+
+
+
 #formBtn{
   border: none;
   background-color: transparent;
