@@ -7,8 +7,25 @@
 
 }
 
-@import 'form.scss';
-@import 'invite.scss';
+@font-face {
+  font-family: 'eraserregular';
+  src: url('../fonts/Eraser/eraserregular.woff2') format('woff2'),
+       url('../fonts/Eraser/eraserregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'reeyregular';
+  src: url('../fonts/reey/reey-regular.woff2') format('woff2'),
+       url('../fonts/reey/reey-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@import './form.scss';
+@import './invite.scss';
 
 
 * {
