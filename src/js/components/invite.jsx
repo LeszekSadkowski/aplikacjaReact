@@ -1,5 +1,6 @@
 import React from 'react';
 import {Wedding} from './wedding1.jsx';
+import {Birthday} from './birthday1.jsx';
 
 class Invite extends React.Component{
     constructor(props){
@@ -21,10 +22,12 @@ class Invite extends React.Component{
 
     }
     render(){
+        let toDisplay=(this.state.option=='wedding')? <Wedding info={this.state} />:<Birthday info={this.state} /> //do zamiany na switcha gdy będzie więcej
+
 
         console.log(this.props)
         return (<div id='displInvSite'>
-            <Wedding info={this.state} />
+            {toDisplay}
             <div className="btnAnim">
                     <div className="example-screen inviteBtn" onClick={this.print}  >print</div>
             </div>
