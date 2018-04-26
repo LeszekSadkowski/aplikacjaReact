@@ -90,7 +90,13 @@
 }
 
 
-
+#under {
+    img{  max-width: 100vw;
+    max-height: 100vh;
+    }
+    display: flex;
+    justify-items: center;
+}
 
 
 

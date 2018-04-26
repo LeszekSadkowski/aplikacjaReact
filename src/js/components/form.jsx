@@ -32,15 +32,26 @@ class Form extends React.Component{
         const monthsArr=['January','February','March','April','May','June','July','August','September','October','November','December']
         let monthUse=parseInt(whenEl[1]);
         const monthName=monthsArr[monthUse-1];
-        if(this.state.name.length!=0||this.state.who.length!=0||
-            this.state.name.where!=0||this.state.when.length!=0
-        ||this.state.hour!=0){
+
+
+        if(this.state.name.length!=0&&this.state.who.length!=0&&
+            this.state.where.length!=0&&this.state.when.length!=0
+        &&this.state.hour!=0){
             empty=false;
         }
-        if(whenEl[0]>=curYear && whenEl[1]>=curMonth && whenEl[2]>=currDay){
+
+        if(whenEl[2]>=currDay){
             wrgDate=false;
+        }
+        if(whenEl[1]>=curMonth){
+            wrgDate=false;
+        }
+
+        if(whenEl[0]>=curYear){
+            wrgDate=false;
+
         }else{
-            alert('please fill out the form')
+            alert('date cannot be past');
         }
 
         if (empty==false && wrgDate==false){
@@ -52,7 +63,7 @@ class Form extends React.Component{
 
             })
         }else{
-            alert('date cannot be past')
+            alert('please fill out the form');
         }
     }
 

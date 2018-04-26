@@ -43,6 +43,7 @@
     "node-gyp": "^3.6.2",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
+    "react-pdf": "^3.0.4",
     "react-router-dom": "^4.2.2"
   }
 }
